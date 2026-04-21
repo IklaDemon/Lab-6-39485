@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import lab6.server.collection.CollectionManager;
 import lab6.server.command.CommandExecutor;
+import lab6.server.console.ServerConsole;
 import lab6.server.io.XMLParser;
 import lab6.server.io.XMLWriter;
 import lab6.server.network.UDPServer;
@@ -75,6 +76,10 @@ public class ServerMain {
           logger.info("Server channel closed.");
         }
       }));
+
+      Thread consoleThread = new Thread(new ServerConsole(collectionManager, server));
+      consoleThread.setDaemon(true);
+      consoleThread.start();
 
       server.start();
 

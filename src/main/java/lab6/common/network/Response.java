@@ -10,7 +10,6 @@ import java.io.Serializable;
  * describing the result of the request processing.
  */
 public class Response implements Serializable {
-  private static final long serialVersionUID = 1L;
   private final boolean success;
   private final String message;
 

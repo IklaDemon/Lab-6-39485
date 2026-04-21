@@ -5,7 +5,6 @@ lab6/server/command/AddIfMin.class
 lab6/common/model/Dragon$Builder.class
 lab6/server/app/ServerMain.class
 lab6/common/model/DragonMaker.class
-lab6/server/network/RequestReceiver.class
 lab6/server/command/Clear.class
 lab6/server/network/ReceivedRequest.class
 lab6/common/enums/DragonType.class
@@ -29,8 +28,8 @@ lab6/server/collection/CollectionManager.class
 lab6/client/console/CLI$1.class
 lab6/common/network/Response.class
 lab6/server/command/Show.class
-lab6/server/io/Writer.class
 lab6/server/command/PrintDescending.class
+lab6/server/io/Writer.class
 lab6/server/command/RemoveLower.class
 lab6/server/command/Command.class
 lab6/server/command/Update.class

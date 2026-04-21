@@ -30,6 +30,7 @@
 /home/afurlan/Desktop/Programming-Projects/Java/Lab6/src/main/java/lab6/server/command/RemoveLower.java
 /home/afurlan/Desktop/Programming-Projects/Java/Lab6/src/main/java/lab6/server/command/Show.java
 /home/afurlan/Desktop/Programming-Projects/Java/Lab6/src/main/java/lab6/server/command/Update.java
+/home/afurlan/Desktop/Programming-Projects/Java/Lab6/src/main/java/lab6/server/console/ServerConsole.java
 /home/afurlan/Desktop/Programming-Projects/Java/Lab6/src/main/java/lab6/server/io/Reader.java
 /home/afurlan/Desktop/Programming-Projects/Java/Lab6/src/main/java/lab6/server/io/Writer.java
 /home/afurlan/Desktop/Programming-Projects/Java/Lab6/src/main/java/lab6/server/io/XMLParser.java

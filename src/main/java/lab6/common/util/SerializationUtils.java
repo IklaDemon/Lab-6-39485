@@ -38,11 +38,10 @@ public class SerializationUtils {
    * @throws ClassCastException     if the deserialized object cannot be cast to
    *                                the expected type
    */
-  @SuppressWarnings("unchecked")
   public static <T> T deserialize(byte[] data, Class<T> clazz) throws IOException, ClassNotFoundException {
     ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(data);
     ObjectInputStream objectInputStream = new ObjectInputStream(byteArrayInputStream);
     Object obj = objectInputStream.readObject();
-    return (T) obj;
+    return clazz.cast(obj);
   }
 }
