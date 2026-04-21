@@ -1,0 +1,4 @@
+show
+execute_script ./script-2.txt
+show
+info

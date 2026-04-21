@@ -1,0 +1,5 @@
+add robert-1,1,1,null,1,null,null,null
+add dasoifaksjdajsdka.,sdas.d,as.,da.s,das.d,as.,das.,d
+show
+update 1 robert-2,1,1,null,1,null,null,null
+execute_script ./script-1.txt
