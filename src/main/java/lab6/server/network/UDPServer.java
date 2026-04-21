@@ -21,7 +21,6 @@ import lab6.server.command.CommandExecutor;
 public class UDPServer {
 
   private static final Logger logger = LoggerFactory.getLogger(UDPServer.class);
-
   private final int port;
   private final int bufferSize;
   private final DatagramChannel channel;
@@ -70,7 +69,7 @@ public class UDPServer {
     channel.bind(new InetSocketAddress(port));
     running = true;
 
-    System.out.println("UDP server started on port " + port);
+    // System.out.println("UDP server started on port " + port);
     logger.info("UDP server bound on port {}", port);
     logger.info("Server loop started.");
 

@@ -59,10 +59,12 @@ public class ServerMain {
 
       server = new UDPServer(5555, 65507, commandExecutor);
 
+      // I need an "effectively final" copy of server to use in the labda
       UDPServer finalServer = server;
       Runtime.getRuntime().addShutdownHook(new Thread(() -> {
         logger.info("Shutdown detected. Saving collection and stopping server...");
-        System.out.println("\nShutdown detected. Saving collection and stopping server...");
+        // System.out.println("\nShutdown detected. Saving collection and stopping
+        // server...");
         try {
           finalServer.stop();
           collectionManager.save();
@@ -70,7 +72,7 @@ public class ServerMain {
 
         } catch (Exception e) {
           logger.error("Error during shutdown save: {}", e.getMessage(), e);
-          System.out.println("Error during shutdown save: " + e.getMessage());
+          // System.out.println("Error during shutdown save: " + e.getMessage());
         } finally {
           finalServer.close();
           logger.info("Server channel closed.");
@@ -78,7 +80,7 @@ public class ServerMain {
       }));
 
       Thread consoleThread = new Thread(new ServerConsole(collectionManager, server));
-      consoleThread.setDaemon(true);
+      consoleThread.setDaemon(true); // to close the console thread when the server dies
       consoleThread.start();
 
       server.start();
