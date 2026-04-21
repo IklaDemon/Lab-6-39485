@@ -10,6 +10,9 @@ import java.io.Serializable;
  * The number of treasures must not be {@code null} and must be greater than 0.
  */
 public class DragonCave implements Serializable {
+
+  private static final long serialVersionUID = 1L;
+
   private Double numberOfTreasures; // The field cannot be null, the field value must be greater than 0
 
   /**

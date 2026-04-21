@@ -10,6 +10,9 @@ import java.io.Serializable;
  * The {@code y} field must not be {@code null}.
  */
 public class Coordinates implements Serializable {
+
+  private static final long serialVersionUID = 1L;
+
   private long x;
   private Long y; // The field cannot be null
 

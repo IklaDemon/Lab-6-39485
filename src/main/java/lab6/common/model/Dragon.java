@@ -16,6 +16,9 @@ import lab6.common.enums.DragonType;
  * compared by wingspan and, if equal, by id.
  */
 public class Dragon implements Comparable<Dragon>, Serializable {
+
+  private static final long serialVersionUID = 1L;
+
   private long id; // The value of this field must be greater than 0, The value of this field must
                    // be unique, The value of this field must be generated automatically
   private String name; // Field cannot be null, String cannot be empty

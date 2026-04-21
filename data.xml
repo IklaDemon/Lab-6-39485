@@ -59,4 +59,18 @@
             <numberOfTreasures>5.0</numberOfTreasures>
         </cave>
     </dragon>
+    <dragon>
+        <id>5</id>
+        <name>Test2</name>
+        <coordinates>
+            <x>1</x>
+            <y>2</y>
+        </coordinates>
+        <creationDate>21-04-2026</creationDate>
+        <age>3</age>
+        <wingspan>200.0</wingspan>
+        <type></type>
+        <character></character>
+        <cave></cave>
+    </dragon>
 </dragons>

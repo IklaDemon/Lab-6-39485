@@ -12,6 +12,9 @@ import lab6.common.model.Dragon;
  * an identifier, a cave value, or a {@code Dragon} object.
  */
 public class Request implements Serializable {
+
+  private static final long serialVersionUID = 1L;
+
   private final CommandType commandType;
   private final Long id;
   private final Double caveValue;
